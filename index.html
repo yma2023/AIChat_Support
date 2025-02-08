@@ -3,32 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI性格診断アプリ サポートページ</title>
+  <title>AI性格診断アプリ | ホーム & サポート</title>
   <style>
+    /* 全体の基本設定 */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
     }
+    /* ヘッダー */
     header {
       background-color: #4CAF50;
+      color: #fff;
       padding: 20px;
       text-align: center;
-      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* コンテナ（共通） */
     .container {
       max-width: 800px;
       margin: 20px auto;
-      background-color: #fff;
+      background: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+    /* プロモーションセクション（ホーム） */
+    .promo-images {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .promo-images img {
+      max-width: calc(33.333% - 10px);
+      height: auto;
+      border-radius: 8px;
+    }
+    .feature {
+      margin-bottom: 20px;
+    }
+    .feature h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
       color: #4CAF50;
     }
+    /* サポートセクション */
     .section {
       margin-bottom: 30px;
     }
@@ -37,6 +78,7 @@
     }
     .faq-item h3 {
       margin: 0 0 10px;
+      color: #4CAF50;
     }
     .contact-list {
       list-style-type: none;
@@ -52,64 +94,100 @@
     a:hover {
       text-decoration: underline;
     }
+    /* フッター */
     footer {
-      background-color: #4CAF50;
-      padding: 10px;
       text-align: center;
-      color: #fff;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
       margin-top: 20px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <!-- ヘッダーとナビゲーション -->
   <header>
-    <h1>AI性格診断アプリ サポート</h1>
+    <h1>AI性格診断アプリ</h1>
+    <p>AIと深める自己理解診断</p>
+    <nav>
+      <a href="#home">ホーム</a>
+      <a href="#support">サポート</a>
+    </nav>
   </header>
-
-  <div class="container">
-    <!-- サポート概要 -->
-    <section class="section support-info">
-      <h2>サポート情報について</h2>
-      <p>
-        このページでは、AI性格診断アプリに関するご質問や不具合報告など、サポートに関する情報を提供しています。まずは以下のFAQをご覧いただき、それでも解決しない場合はお問い合わせください。
+  
+  <!-- プロモーションセクション（ホーム） -->
+  <section id="home">
+    <div class="container">
+      <!-- 画像の行 -->
+      <div class="promo-images">
+        <img src="image1.png" alt="広告なしで快適な操作">
+        <img src="image2.png" alt="AI性格診断をもとに分析！">
+        <img src="image3.png" alt="診断結果を理解したAIと自由におしゃべり">
+      </div>
+      <!-- 特徴1 -->
+      <div class="feature">
+        <h2>広告なしで、操作に集中！</h2>
+        <p>煩わしい広告が一切なく、スムーズな操作を提供します。ストレスフリーな診断体験をお楽しみください。</p>
+      </div>
+      <!-- 特徴2 -->
+      <div class="feature">
+        <h2>診断結果をリストで管理！</h2>
+        <p>性格診断をもとに、あなたを深く理解したAIが、ぴったりのアドバイスや雑談を提供します。自分自身の新たな一面を発見しましょう。</p>
+      </div>
+      <!-- 特徴3 -->
+      <div class="feature">
+        <h2>AIと気軽におしゃべり！</h2>
+        <p>気軽に話して、新しい自分を発見できる体験を。どんな質問にも親身に答えるAIが、あなたのパートナーとなります。</p>
+      </div>
+      <!-- アプリダウンロードリンク -->
+      <p style="text-align:center;">
+        <a href="https://apps.apple.com/cn/developer/yokoyama-kojun/id1768680544">今すぐアプリをダウンロード！</a>
       </p>
-    </section>
-
-    <!-- FAQ セクション -->
-    <section class="section faq">
-      <h2>よくある質問 (FAQ)</h2>
-      <div class="faq-item">
-        <h3>Q1: アプリが正常に起動しない場合はどうすればよいですか？</h3>
+    </div>
+  </section>
+  
+  <!-- サポートセクション -->
+  <section id="support">
+    <div class="container">
+      <!-- サポート概要 -->
+      <div class="section support-info">
+        <h2>サポート情報</h2>
         <p>
-          A: アプリの最新版にアップデートの上、一度終了して再起動してください。それでも問題が解決しない場合はお問い合わせフォームよりご連絡ください。
+          このページでは、AI性格診断アプリに関するご質問や不具合報告など、サポートに関する情報を提供しています。まずは以下のFAQをご覧いただき、それでも解決しない場合はお問い合わせください。
         </p>
       </div>
-      <div class="faq-item">
-        <h3>Q2: 診断結果はどこで確認できますか？</h3>
-        <p>
-          A: アプリ内の「診断結果」メニューから、過去の診断結果を確認できます。
-        </p>
+      <!-- FAQ セクション -->
+      <div class="section faq">
+        <h2>よくある質問 (FAQ)</h2>
+        <div class="faq-item">
+          <h3>Q1: アプリが正常に起動しない場合はどうすればよいですか？</h3>
+          <p>A: アプリの最新版にアップデートの上、一度終了して再起動してください。それでも問題が解決しない場合はお問い合わせフォームよりご連絡ください。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q2: 診断結果はどこで確認できますか？</h3>
+          <p>A: アプリ内の「診断結果」メニューから、過去の診断結果を確認できます。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q3: 個人情報の取り扱いはどうなっていますか？</h3>
+          <p>A: 個人情報は当社のプライバシーポリシーに基づき、厳重に管理しております。詳細は<a href="https://yma2023.github.io/AIChat_privasy/" target="_blank">プライバシーポリシー</a>をご確認ください。</p>
+        </div>
       </div>
-      <div class="faq-item">
-        <h3>Q3: 個人情報の取り扱いはどうなっていますか？</h3>
-        <p>
-          A: 個人情報は当社のプライバシーポリシーに基づき、厳重に管理しております。詳細は<a href="https://yma2023.github.io/AIChat_privasy/" target="_blank">プライバシーポリシー</a>をご確認ください。
-        </p>
+      <!-- お問い合わせ セクション -->
+      <div class="section contact">
+        <h2>お問い合わせ</h2>
+        <p>ご不明な点や不具合の報告、その他サポートが必要な場合は、下記の方法でお問い合わせください。</p>
+        <ul class="contact-list">
+          <li>メール: <a href="mailto:so999577@aol.com">so999577@aol.com</a></li>
+        </ul>
       </div>
-    </section>
-
-    <!-- お問い合わせ セクション -->
-    <section class="section contact">
-      <h2>お問い合わせ</h2>
-      <p>
-        ご不明な点や不具合の報告、その他サポートが必要な場合は、下記の方法でお問い合わせください。
-      </p>
-      <ul class="contact-list">
-        <li>メール: <a href="mailto:o999577@aol.comm">so999577@aol.com</a></li>
-      </ul>
-    </section>
-  </div>
-
+    </div>
+  </section>
+  
+  <!-- フッター -->
   <footer>
     <p>&copy; 2025 AI性格診断アプリ. All Rights Reserved.</p>
   </footer>
